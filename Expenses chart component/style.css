@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background: hsl(27, 66%, 92%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    caret-color: transparent;
+}
+main{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    width:400px;
+}
+.section1, .mon, .tue, .wed, .thu, .fri, .sat, .sun{
+    background: hsl(10, 79%, 65%);
+}
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+}
+.section2{
+    background: hsl(33, 100%, 98%);
+    padding: 20px 30px;
+    border-radius: 15px;
+    color:hsl(25, 47%, 15%);
+}
+.total-price-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.percent-div{
+    text-align: end;
+}
+.charts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.div-days{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.mon, .tue, .wed, .thu, .fri, .sat, .sun{
+    width:35px;
+    border-radius:5px;
+    background: hsl(10, 79%, 65%);
+    margin-bottom: 4px;
+}
+.wed{
+    background: hsl(186, 34%, 60%);
+}
+.mon{
+    height:35px;
+}
+.tue{
+    height:70px;
+}
+.wed{
+    height:105px;
+}
+.thu{
+    height:65px;
+}
+.fri{
+    height:55px;
+}
+.sat{
+    height:95px;
+}
+.sun{
+    height:60px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.section2-h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+h3{
+    font-weight: 400;
+    font-size: 13px;
+    color:hsl(28, 10%, 53%);
+}
+.section1-h3{
+    color: white;
+    font-weight: 200;
+}
+.percent{
+    color: hsl(25, 47%, 15%);
+    font-weight: 600;
+}
+p{
+    font-size:11px;
+    color:hsl(28, 10%, 53%);
+}
+.logo{
+    width:50px;
+}
+hr{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border: 1px solid hsl(10, 79%, 65%);
+   opacity: 0.2;
+}
+.monPrice, .tuePrice, .wedPrice, .thuPrice, .friPrice, .satPrice, .sunPrice{
+    background: hsl(25, 47%, 15%);
+    color:white;
+    border-radius:5px;
+    font-size:12px;
+    padding:6px 4px;
+    width:45px;
+    text-align: center;
+    font-size: 11px;
+    display: none;
+    position: absolute;
+}
+.monPrice{
+    top:52.4%;
+}
+.tuePrice{
+    top:45%
+}
+.wedPrice{
+    top:37.5%
+}
+.thuPrice{
+    top:46%
+}
+.friPrice{
+    top:48%
+}
+.satPrice{
+    top:39.6%
+}
+.sunPrice{
+    top:47%
+}
+@media(max-width:500px){
+    main{
+        max-width: 375px;
+    }
+    .mon{
+        height:55px;
+    }
+    .tue{
+        height:90px;
+    }
+    .wed{
+        height:125px;
+    }
+    .thu{
+        height:85px;
+    }
+    .fri{
+        height:75px;
+    }
+    .sat{
+        height:115px;
+    }
+    .sun{
+        height:80px;
+    }
+    .monPrice, .tuePrice, .wedPrice, .thuPrice, .friPrice, .satPrice, .sunPrice{
+        padding:6px 3px;
+        width: 42px;
+    }
+    .monPrice{
+        top:50%;
+    }
+    .tuePrice{
+        top:43%
+    }
+    .wedPrice{
+        top:36%
+    }
+    .thuPrice{
+        top:44%
+    }
+    .friPrice{
+        top:46%
+    }
+    .satPrice{
+        top:38%
+    }
+    .sunPrice{
+        top:45%
+    }
+}
